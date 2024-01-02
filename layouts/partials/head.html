@@ -146,4 +146,7 @@
   </script>
   {{ end }}
   {{ end }}
+  {{ if or .Params.vega .Site.Params.vega }}
+	{{ partial "vega.html" . }}
+  {{ end }}
 </head>
