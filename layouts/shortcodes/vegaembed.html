@@ -2,8 +2,8 @@
 <script type="text/javascript">
   var spec = '{{ .Get "spec" }}';
 
-  var opt = '{{ .Get "opt" }}';
+  var actions = '{{ .Get "actions" }}';
 
-  vegaEmbed('#{{ .Get "id" }}', spec, opt).then(function(result) {
+  vegaEmbed('#{{ .Get "id" }}', spec, actions).then(function(result) {
   }).catch(console.error);
 </script>
