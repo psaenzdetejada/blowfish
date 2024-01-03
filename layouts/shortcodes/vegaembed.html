@@ -1,7 +1,7 @@
 <div id='{{ .Get "id" }}'></div>
 <script type="text/javascript">
   var spec = '{{ .Get "spec" }}';
-  var actions = false
-  vegaEmbed('#{{ .Get "id" }}', spec, actions).then(function(result) {
+  var opt = {actions: false};
+  vegaEmbed('#{{ .Get "id" }}', spec, opt).then(function(result) {
   }).catch(console.error);
 </script>
